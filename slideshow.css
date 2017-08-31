@@ -1,0 +1,31 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: white;
+    width: 550px;
+    margin: 0 auto;
+    border: 3px dashed green;
+    padding: 1em;
+}
+h1 {
+    color: green; margin: 0;
+    padding: 0 0 1em 0;
+    text-align: center;
+	font-style: italic;
+}
+h2 {
+    text-align: center;
+}
+p {
+    margin: 0;
+    padding: .5em;
+    text-align: center;	
+}
+ul {
+    display: none;
+}
+#caption {
+  color: green;
+  font-weight: bold;
+}
+
