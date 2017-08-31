@@ -5,18 +5,46 @@
     <title>Term-Project / SlideShow</title>
     <link rel="stylesheet" href="slideshow.css"/>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.js"></script>
     <script src="library_slideshow.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
-    <main>
+<!--     <main>
         <h1>Beaches in Brazil</h1>
-		<p><input type="button" id="next" value="Next">
-        <input type="button" id="play_pause" value="Pause">
-		<input type="button" id="previous" value="Previous"></p>
+		<p><input type="button" id="next" value="Previous"></p>
+        <p><input type="button" id="play_pause" value="Pause"></p>
+		<p><input type="button" id="previous" value="Next"></p>
         <p><img src="images/arembepe-sa.png" id="image" alt=""></p>
         <p><span id="caption">Beach in Arembepe - Bahia</span></p>
-    </main>
+    </main> -->
+
+    <script type="text/javascript">
+        $(function(){
+            $(".slides ul").cycle({
+                fx:'fade',
+                speed:2000,
+                timeout:1000,
+                prev:'#previous',
+                next:'#next',
+                loop:'true'
+            })
+        })
+    </script>
+
+    <div class="slides">
+        <ul>
+            <li><img src="images/arembepe-sa.png"></li>
+            <li><img src="images/barra-sa.jpg"></li>
+            <li><img src="images/guaruja-sp.jpg"></li>
+            <li><img src="images/jericoacoara-fo.jpg"></li>
+            <li><img src="images/lencois-ma.jpg"></li>
+        </ul>
+    </div>
+    <p>
+        <a href="#" id="previous">Previous</a>
+        <a href="#" id="next">Next</a>
+    </p>
 </body>
 
 </html>
